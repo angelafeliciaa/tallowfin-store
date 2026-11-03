@@ -25,3 +25,12 @@ ul { padding-left: 20px; }
 .modal .x { position: absolute; top: 10px; right: 12px; background: none; border: 0; font-size: 22px; cursor: pointer; }
 .modal input { padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; }
 .gate { max-width: 420px; margin: 64px auto; text-align: center; display: grid; gap: 16px; }
+.photo { text-decoration: none; }
+.photo.pine { background: linear-gradient(160deg, #cfdccf, #6f8a72); }
+.photo.ember { background: linear-gradient(160deg, #ecd3c6, #b5755a); }
+.member { font-size: 14px; margin: -6px 0 8px; }
+.stock { font-size: 13px; margin: 0 0 10px; color: #2d6a36; }
+.stock.low { color: #a15c00; font-weight: 600; }
+.stock.out { color: #a11f1f; font-weight: 600; }
+.card .price { font-size: 17px; margin: 0; min-height: 0; }
+.gate input { padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; }

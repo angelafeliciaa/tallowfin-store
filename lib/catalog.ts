@@ -1,28 +1,24 @@
-export type ProductId = "ridge" | "coast";
+export type ProductId = "ridge" | "coast" | "pine" | "ember";
 
 export type Product = {
   id: ProductId;
   name: string;
-  tagline: string;
   color: string;
 };
 
 export const PRODUCTS: Record<ProductId, Product> = {
-  ridge: {
-    id: "ridge",
-    name: "Tallowfin Ridge Bottle, 24 oz",
-    tagline: "Double-wall insulated steel bottle with a leakproof chug lid.",
-    color: "Slate",
-  },
-  coast: {
-    id: "coast",
-    name: "Tallowfin Coast Bottle, 24 oz",
-    tagline: "Double-wall insulated steel bottle with a leakproof chug lid.",
-    color: "Sand",
-  },
+  ridge: { id: "ridge", name: "Tallowfin Ridge Bottle, 24 oz", color: "Slate" },
+  coast: { id: "coast", name: "Tallowfin Coast Bottle, 24 oz", color: "Sand" },
+  pine: { id: "pine", name: "Tallowfin Pine Bottle, 24 oz", color: "Forest" },
+  ember: { id: "ember", name: "Tallowfin Ember Bottle, 24 oz", color: "Clay" },
 };
 
+const PRODUCT_ORDER: ProductId[] = ["ridge", "coast", "pine", "ember"];
+
+export const TAGLINE = "Double-wall insulated steel bottle with a leakproof chug lid.";
 export const PRICE_USD = 34;
+export const MEMBER_PRICE_USD = 29;
+export const LOW_STOCK_COUNT = 3;
 export const RETURN_POLICY = "Free returns within 60 days of delivery, even if used.";
 export const SHIPPING_POLICY = "Free shipping on every US order. Ships in 1–2 business days.";
 
@@ -40,56 +36,99 @@ export type Treatment =
   | "no-jsonld"
   | "challenge"
   | "pdf-policy"
+  | "slow"
   | "badge"
   | "popup"
-  | "slow";
+  | "low-stock"
+  | "out-of-stock"
+  | "stock-conflict"
+  | "signin-cart"
+  | "member-price";
 
-export type Experiment = {
-  id: string;
-  treatment: Treatment;
-  question: string;
-};
+export type Experiment = { id: string; treatment: Treatment; group: string; question: string };
 
 export const EXPERIMENTS: Experiment[] = [
-  { id: "e0", treatment: "none", question: "Baseline: two identical pages (A/A)" },
-  { id: "e1", treatment: "js-price", question: "Price only rendered by JavaScript" },
-  { id: "e2", treatment: "no-jsonld", question: "No Product JSON-LD" },
-  { id: "e3", treatment: "challenge", question: "Bot challenge before the page" },
-  { id: "e4", treatment: "pdf-policy", question: "Return policy only in a linked PDF" },
-  { id: "e5", treatment: "badge", question: "Free shipping and returns badge" },
-  { id: "e6", treatment: "popup", question: "Email pop-up on load" },
-  { id: "e7", treatment: "slow", question: "Page responds 3 seconds slower" },
+  { id: "e00", treatment: "none", group: "Baseline", question: "Four identical bottles (A/A)" },
+  { id: "e01", treatment: "js-price", group: "Page setup", question: "Price only rendered by JavaScript, no product data" },
+  { id: "e02", treatment: "no-jsonld", group: "Page setup", question: "No Product JSON-LD" },
+  { id: "e03", treatment: "pdf-policy", group: "Page setup", question: "Return policy only in a linked PDF" },
+  { id: "e04", treatment: "slow", group: "Page setup", question: "Product page responds 3 seconds slower" },
+  { id: "e05", treatment: "challenge", group: "Bot access", question: "Bot challenge before the product page" },
+  { id: "e06", treatment: "low-stock", group: "Inventory", question: "Only 3 left in stock" },
+  { id: "e07", treatment: "out-of-stock", group: "Inventory", question: "Sold out" },
+  { id: "e08", treatment: "stock-conflict", group: "Inventory", question: "Page says sold out, product data says in stock" },
+  { id: "e09", treatment: "signin-cart", group: "Sign-in", question: "Sign-in required to add to cart" },
+  { id: "e10", treatment: "member-price", group: "Sign-in", question: "Members pay $29, sign in to unlock" },
+  { id: "e11", treatment: "badge", group: "Persuasion", question: "Best seller badge" },
+  { id: "e12", treatment: "popup", group: "Persuasion", question: "Email pop-up on the product page" },
 ];
+
+export type Listing = {
+  code: string;
+  experimentId: string;
+  rotation: number;
+  treatment: Treatment;
+  treatedProduct: ProductId;
+  order: ProductId[];
+};
 
 export type ProductPage = {
   slug: string;
+  listingCode: string;
   experimentId: string;
-  arm: "a" | "b";
   productId: ProductId;
   treatment: Treatment;
 };
 
-// Each experiment runs in two arms so the treatment lands on Ridge in one and Coast in the other.
-// Slugs carry a short opaque code so the URL never reveals which page is treated.
-const CODES: Record<string, [string, string, string, string]> = {
-  e0: ["k4m2", "p7d9", "x3q8", "h6w1"],
-  e1: ["r8t5", "c2n7", "v9j4", "m1z6"],
-  e2: ["q5b3", "w8f2", "d4k9", "t7y1"],
-  e3: ["n6c8", "g3s5", "b9r2", "y4h7"],
-  e4: ["f1x6", "j8m3", "s5v9", "l2p4"],
-  e5: ["u7g2", "a4d8", "z1k5", "e9t3"],
-  e6: ["h3w9", "o6b1", "i8n4", "c5r7"],
-  e7: ["m9q2", "s3y6", "k7f8", "w2j5"],
+const ROTATIONS = 4;
+
+// Rotation r treats product r and shifts the grid by 2r, so across the four rotations every
+// product is treated once and the treated card sits in each of the four positions once.
+const rotationOrder = (rotation: number) => {
+  const shift = (2 * rotation) % ROTATIONS;
+  return [...PRODUCT_ORDER.slice(shift), ...PRODUCT_ORDER.slice(0, shift)];
 };
 
-export const PAGES: ProductPage[] = EXPERIMENTS.flatMap((experiment) => {
-  const [aRidge, aCoast, bRidge, bCoast] = CODES[experiment.id];
-  return [
-    { slug: `ridge-bottle-24oz-${aRidge}`, experimentId: experiment.id, arm: "a", productId: "ridge", treatment: experiment.treatment },
-    { slug: `coast-bottle-24oz-${aCoast}`, experimentId: experiment.id, arm: "a", productId: "coast", treatment: "none" },
-    { slug: `ridge-bottle-24oz-${bRidge}`, experimentId: experiment.id, arm: "b", productId: "ridge", treatment: "none" },
-    { slug: `coast-bottle-24oz-${bCoast}`, experimentId: experiment.id, arm: "b", productId: "coast", treatment: experiment.treatment },
-  ] satisfies ProductPage[];
-});
+const opaqueCode = (seed: string) => {
+  let hash = 2166136261;
+  for (const char of seed) hash = Math.imul(hash ^ char.charCodeAt(0), 16777619);
+  return (hash >>> 0).toString(36).slice(0, 5);
+};
 
+export const LISTINGS: Listing[] = EXPERIMENTS.flatMap((experiment) =>
+  Array.from({ length: ROTATIONS }, (_, rotation) => ({
+    code: opaqueCode(`${experiment.id}-${rotation}`),
+    experimentId: experiment.id,
+    rotation,
+    treatment: experiment.treatment,
+    treatedProduct: PRODUCT_ORDER[rotation],
+    order: rotationOrder(rotation),
+  })),
+);
+
+export const PAGES: ProductPage[] = LISTINGS.flatMap((listing) =>
+  PRODUCT_ORDER.map((productId) => ({
+    slug: `${productId}-bottle-24oz-${listing.code}`,
+    listingCode: listing.code,
+    experimentId: listing.experimentId,
+    productId,
+    treatment: productId === listing.treatedProduct ? listing.treatment : "none",
+  })),
+);
+
+export const listingByCode = (code: string) => LISTINGS.find((listing) => listing.code === code);
 export const pageBySlug = (slug: string) => PAGES.find((page) => page.slug === slug);
+export const pageFor = (listingCode: string, productId: ProductId) =>
+  PAGES.find((page) => page.listingCode === listingCode && page.productId === productId)!;
+
+export type StockState = "in-stock" | "low-stock" | "sold-out";
+
+export const stockShown = (treatment: Treatment): StockState =>
+  treatment === "low-stock" ? "low-stock" : treatment === "out-of-stock" || treatment === "stock-conflict" ? "sold-out" : "in-stock";
+
+export const stockInData = (treatment: Treatment) =>
+  treatment === "low-stock"
+    ? "https://schema.org/LimitedAvailability"
+    : treatment === "out-of-stock"
+      ? "https://schema.org/OutOfStock"
+      : "https://schema.org/InStock";

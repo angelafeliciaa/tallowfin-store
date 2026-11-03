@@ -1,14 +1,17 @@
 import { pageBySlug } from "@/lib/catalog";
 
+const EVENTS = new Set(["add_to_cart", "signin_wall_shown", "signin_attempt", "signup_attempt", "member_price_click"]);
+
 export async function POST(request: Request) {
-  const { slug } = (await request.json().catch(() => ({}))) as { slug?: string };
+  const { event, slug } = (await request.json().catch(() => ({}))) as { event?: string; slug?: string };
+  if (!event || !EVENTS.has(event)) return Response.json({ ok: false }, { status: 400 });
   const page = slug ? pageBySlug(slug) : undefined;
   console.log(
     JSON.stringify({
-      event: "add_to_cart",
+      event,
       slug,
+      listing: page?.listingCode,
       experimentId: page?.experimentId,
-      arm: page?.arm,
       treatment: page?.treatment,
       userAgent: request.headers.get("user-agent"),
       at: new Date().toISOString(),
