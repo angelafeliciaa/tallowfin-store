@@ -27,7 +27,7 @@ export default function CartPage() {
         </>
       )}
       <button type="button" className="btn" disabled>
-        Checkout is disabled on this test store
+        Checkout is unavailable right now
       </button>
     </div>
   );

@@ -17,10 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Link href="/cart">Cart</Link>
         </header>
         <main>{children}</main>
-        <footer className="foot">
-          Tallowfin is a research test store run by The Prompting Company to study how AI shopping agents read
-          product pages. Products are not for sale and checkout is disabled.
-        </footer>
+        <footer className="foot">© 2026 Tallowfin</footer>
       </body>
     </html>
   );
