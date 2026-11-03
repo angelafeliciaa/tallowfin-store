@@ -15,7 +15,7 @@ export default function Home() {
             <Link key={page.slug} href={`/p/${page.slug}`} className="card">
               <div className={`photo ${product.id}`}>{product.color}</div>
               <strong>{product.name}</strong>
-              <span>${PRICE_USD}.00</span>
+              <span>{`$${PRICE_USD}.00`}</span>
             </Link>
           );
         })}

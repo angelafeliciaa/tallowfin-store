@@ -23,7 +23,7 @@ export default function CartPage() {
               </li>
             ))}
           </ul>
-          <p className="price">Total: ${total}.00</p>
+          <p className="price">{`Total: $${total}.00`}</p>
         </>
       )}
       <button type="button" className="btn" disabled>

@@ -61,7 +61,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           {treatment === "badge" && <span className="badge">Free shipping · Free 60-day returns</span>}
           <h1>{product.name}</h1>
           <p className="muted">{product.tagline} Color: {product.color}.</p>
-          {treatment === "js-price" ? <JsPrice slug={slug} /> : <p className="price">${PRICE_USD}.00</p>}
+          {treatment === "js-price" ? <JsPrice slug={slug} /> : <p className="price">{`$${PRICE_USD}.00`}</p>}
           <AddToCart slug={slug} name={product.name} />
           <ul>
             {SPECS.map((spec) => (
