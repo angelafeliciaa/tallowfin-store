@@ -7,7 +7,7 @@ const BODY_COLORS: Record<Product["id"], { body: string; shade: string }> = {
   ember: { body: "#b8694c", shade: "#97523a" },
 };
 
-export default function BottleImage({ product }: { product: Product }) {
+export default function BottleImage({ product, label = "TALLOWFIN" }: { product: Product; label?: string }) {
   const { body, shade } = BODY_COLORS[product.id];
   return (
     <svg viewBox="0 0 200 200" role="img" aria-label={`${product.name} in ${product.color}`} className="bottle">
@@ -17,7 +17,7 @@ export default function BottleImage({ product }: { product: Product }) {
       <path d="M120 48 q14 8 14 26 v98 q0 12 -12 12 h-10 q12 0 12 -12 v-98 q0 -18 -14 -26 z" fill={shade} />
       <rect x="66" y="84" width="68" height="2" fill="#000" opacity="0.08" />
       <rect x="74" y="64" width="6" height="96" rx="3" fill="#fff" opacity="0.18" />
-      <text x="100" y="128" textAnchor="middle" fontFamily="-apple-system, Helvetica, sans-serif" fontSize="9" letterSpacing="2" fill="#fff" opacity="0.8">TALLOWFIN</text>
+      <text x="100" y="128" textAnchor="middle" fontFamily="-apple-system, Helvetica, sans-serif" fontSize="9" letterSpacing="2" fill="#fff" opacity="0.8">{label}</text>
     </svg>
   );
 }
