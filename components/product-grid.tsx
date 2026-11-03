@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BottleImage from "@/components/bottle-image";
 import PriceLine from "@/components/price-line";
 import StockLine from "@/components/stock-line";
 import { type Listing, PRODUCTS, pageFor, stockShown } from "@/lib/catalog";
@@ -15,7 +16,7 @@ export default function ProductGrid({ listing }: { listing: Listing }) {
           return (
             <div key={page.slug} className="card">
               <Link href={`/p/${page.slug}`} className={`photo ${product.id}`}>
-                {product.color}
+                <BottleImage product={product} />
               </Link>
               {page.treatment === "badge" && <span className="badge">Best seller</span>}
               <Link href={`/p/${page.slug}`}>

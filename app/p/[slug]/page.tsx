@@ -2,6 +2,7 @@ import { cookies, headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import AddToCart from "@/components/add-to-cart";
+import BottleImage from "@/components/bottle-image";
 import Challenge from "@/components/challenge";
 import EmailPopup from "@/components/email-popup";
 import PriceLine from "@/components/price-line";
@@ -80,7 +81,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <Link href={`/c/${page.listingCode}`}>← All bottles</Link>
       </p>
       <div className="product">
-        <div className={`photo ${product.id}`}>{product.color}</div>
+        <div className={`photo ${product.id}`}>
+          <BottleImage product={product} />
+        </div>
         <div>
           {treatment === "badge" && <span className="badge">Best seller</span>}
           <h1>{product.name}</h1>
