@@ -36,3 +36,6 @@ ul { padding-left: 20px; }
 .gate input { padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; }
 .photo.ridge, .photo.coast, .photo.pine, .photo.ember { background: #f4f3f0; }
 .bottle { width: 78%; height: 78%; }
+.cards { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+@media (max-width: 760px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+.card strong { font-size: 14px; }
