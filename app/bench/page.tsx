@@ -4,7 +4,7 @@ import styles from "./bench.module.css";
 
 export const metadata: Metadata = {
   title: "Shopping Bench",
-  description: "Which brands AI shopping agents pick, with and without a constraint.",
+  description: "Which brands personal agents pick, with and without a constraint.",
   robots: { index: false, follow: false },
 };
 
@@ -55,7 +55,7 @@ export default function BenchPage() {
     <div className={styles.page}>
       <h1>Shopping Bench</h1>
       <p className={styles.lede}>
-        Who AI shopping agents pick first. The top row of each category is a plain question with no brand and no constraint. Each row
+        Who personal agents pick first. The top row of each category is a plain question with no brand and no constraint. Each row
         below adds real buyer constraints. Grok Bot, Muse and Instinct, completed runs only.
       </p>
       {categories.map((category) => {
