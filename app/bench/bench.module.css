@@ -1,0 +1,12 @@
+.page { max-width: 880px; }
+.lede { color: #444; font-size: 15px; margin: 0 0 24px; }
+.category { border-top: 1px solid #ececec; padding: 20px 0 8px; }
+.category h2 { font-size: 20px; margin: 0 0 12px; letter-spacing: -0.01em; }
+.row { display: grid; grid-template-columns: 300px 1fr; gap: 16px; align-items: center; padding: 8px 0; }
+.row:first-of-type { border-bottom: 1px dashed #ddd; padding-bottom: 14px; margin-bottom: 6px; }
+@media (max-width: 680px) { .row { grid-template-columns: 1fr; gap: 6px; } }
+.label { display: grid; gap: 2px; font-size: 13px; line-height: 1.35; }
+.note { color: #777; font-size: 12px; }
+.bar { display: flex; height: 26px; border-radius: 6px; overflow: hidden; background: #f4f3f0; }
+.segment { color: #fff; font-size: 11px; font-weight: 600; white-space: nowrap; overflow: hidden; display: flex; align-items: center; padding: 0 6px; }
+.method { color: #777; font-size: 12px; margin-top: 24px; }

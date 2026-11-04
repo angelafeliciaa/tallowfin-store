@@ -1,0 +1,2877 @@
+{
+ "generated": "2026-11-04T21:07:03.378Z",
+ "categories": [
+  {
+   "category": "Robot vacuums",
+   "bare": {
+    "n": 9,
+    "runs": 9,
+    "agents": {
+     "grok-bot": 6,
+     "muse": 3
+    },
+    "shares": [
+     {
+      "brand": "Roborock",
+      "count": 7
+     },
+     {
+      "brand": "iRobot",
+      "count": 1
+     },
+     {
+      "brand": "Dreame",
+      "count": 1
+     }
+    ]
+   },
+   "bare_prompts": [
+    "What robot vacuum should I buy for a small apartment?",
+    "What's the best robot vacuum and mop combo?",
+    "What's the best robot vacuum?"
+   ],
+   "needs": [
+    {
+     "n": 23,
+     "runs": 25,
+     "agents": {
+      "instinct": 9,
+      "grok-bot": 8,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Roborock",
+       "count": 22
+      },
+      {
+       "brand": "Dreame",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a robot vacuum for a two-story house. I can carry it upstairs, but I want it to remember both floors. Budget is $1,000.",
+     "top_share": 0.9565217391304348
+    },
+    {
+     "n": 23,
+     "runs": 24,
+     "agents": {
+      "muse": 8,
+      "instinct": 8,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Roborock",
+       "count": 16
+      },
+      {
+       "brand": "Shark",
+       "count": 5
+      },
+      {
+       "brand": "Dreame",
+       "count": 1
+      },
+      {
+       "brand": "Tapo",
+       "count": 1
+      }
+     ],
+     "prompt": "Pick a robot vacuum for my small hardwood-floor apartment. I want room mapping and a self-emptying dock, all for under $500.",
+     "top_share": 0.6956521739130435
+    },
+    {
+     "n": 18,
+     "runs": 22,
+     "agents": {
+      "muse": 8,
+      "instinct": 7,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "ECOVACS",
+       "count": 12
+      },
+      {
+       "brand": "Roborock",
+       "count": 5
+      },
+      {
+       "brand": "Narwal",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a robot vacuum and mop for dried kitchen spills and hardwood floors. I want it to clean its own mop. Budget is $1,000.",
+     "top_share": 0.6666666666666666
+    },
+    {
+     "n": 21,
+     "runs": 24,
+     "agents": {
+      "instinct": 8,
+      "grok-bot": 8,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Roborock",
+       "count": 14
+      },
+      {
+       "brand": "ECOVACS",
+       "count": 7
+      }
+     ],
+     "prompt": "Find me a robot vacuum and mop that fits under furniture with 9cm clearance. I can spend $1,200 including the dock.",
+     "top_share": 0.6666666666666666
+    },
+    {
+     "n": 24,
+     "runs": 24,
+     "agents": {
+      "grok-bot": 8,
+      "instinct": 8,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Roborock",
+       "count": 13
+      },
+      {
+       "brand": "iRobot",
+       "count": 6
+      },
+      {
+       "brand": "Shark",
+       "count": 4
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      }
+     ],
+     "prompt": "Pick an easy-to-use robot vacuum for my parents. They want automatic emptying and simple scheduling, without a subscription. Keep it under $600.",
+     "top_share": 0.5416666666666666
+    },
+    {
+     "n": 53,
+     "runs": 55,
+     "agents": {
+      "grok-bot": 24,
+      "muse": 24,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "Shark",
+       "count": 26
+      },
+      {
+       "brand": "Eureka",
+       "count": 16
+      },
+      {
+       "brand": "ECOVACS",
+       "count": 6
+      },
+      {
+       "brand": "Roborock",
+       "count": 2
+      },
+      {
+       "brand": "eufy",
+       "count": 2
+      },
+      {
+       "brand": "Dreame",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a self-emptying robot vacuum under $700 for a home with a dog. I don't want replacement bags and brushes to cost a fortune.",
+     "top_share": 0.49056603773584906
+    },
+    {
+     "n": 21,
+     "runs": 23,
+     "agents": {
+      "instinct": 7,
+      "muse": 8,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Roborock",
+       "count": 9
+      },
+      {
+       "brand": "Dreame",
+       "count": 4
+      },
+      {
+       "brand": "Narwal",
+       "count": 2
+      },
+      {
+       "brand": "ECOVACS",
+       "count": 2
+      },
+      {
+       "brand": "Shark",
+       "count": 1
+      },
+      {
+       "brand": "MOVA",
+       "count": 1
+      },
+      {
+       "brand": "eufy",
+       "count": 1
+      },
+      {
+       "brand": "iRobot",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a robot vacuum and mop under $900. The dock has to work in a space that's 45cm wide and 55cm deep.",
+     "top_share": 0.42857142857142855
+    },
+    {
+     "n": 22,
+     "runs": 23,
+     "agents": {
+      "instinct": 7,
+      "muse": 9,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Roborock",
+       "count": 9
+      },
+      {
+       "brand": "Narwal",
+       "count": 3
+      },
+      {
+       "brand": "ECOVACS",
+       "count": 3
+      },
+      {
+       "brand": "Dreame",
+       "count": 3
+      },
+      {
+       "brand": "eufy",
+       "count": 2
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      },
+      {
+       "brand": "iRobot",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a robot vacuum and mop under $800. I've got a shedding cat, hardwood floors, and a couple of rugs, and I want a self-emptying dock.",
+     "top_share": 0.4090909090909091
+    },
+    {
+     "n": 54,
+     "runs": 54,
+     "agents": {
+      "muse": 23,
+      "grok-bot": 23,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "Roborock",
+       "count": 20
+      },
+      {
+       "brand": "ECOVACS",
+       "count": 15
+      },
+      {
+       "brand": "Dreame",
+       "count": 7
+      },
+      {
+       "brand": "iRobot",
+       "count": 3
+      },
+      {
+       "brand": "MOVA",
+       "count": 3
+      },
+      {
+       "brand": "Narwal",
+       "count": 3
+      },
+      {
+       "brand": "eufy",
+       "count": 3
+      }
+     ],
+     "prompt": "Find me a robot vacuum and mop under $1,500 that washes and dries its own mop. I'm renting, so nothing that needs plumbing.",
+     "top_share": 0.37037037037037035
+    },
+    {
+     "n": 20,
+     "runs": 21,
+     "agents": {
+      "instinct": 6,
+      "grok-bot": 7,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Dreame",
+       "count": 6
+      },
+      {
+       "brand": "Roborock",
+       "count": 6
+      },
+      {
+       "brand": "ECOVACS",
+       "count": 5
+      },
+      {
+       "brand": "MOVA",
+       "count": 1
+      },
+      {
+       "brand": "Shark",
+       "count": 1
+      },
+      {
+       "brand": "eufy",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a robot vacuum that won't constantly need hair cut out of the brush. We have long hair and a dog. Budget is $800.",
+     "top_share": 0.3
+    }
+   ]
+  },
+  {
+   "category": "Face moisturizer",
+   "bare": {
+    "n": 7,
+    "runs": 7,
+    "agents": {
+     "muse": 1,
+     "grok-bot": 6
+    },
+    "shares": [
+     {
+      "brand": "CeraVe",
+      "count": 4
+     },
+     {
+      "brand": "La Roche-Posay",
+      "count": 2
+     },
+     {
+      "brand": "It depends",
+      "count": 1
+     }
+    ]
+   },
+   "bare_prompts": [
+    "What's the best drugstore face moisturizer?",
+    "What moisturizer should I use every day?",
+    "What's the best moisturizer for dry skin?"
+   ],
+   "needs": [
+    {
+     "n": 20,
+     "runs": 21,
+     "agents": {
+      "instinct": 6,
+      "grok-bot": 7,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "CeraVe",
+       "count": 18
+      },
+      {
+       "brand": "PanOxyl",
+       "count": 1
+      },
+      {
+       "brand": "The INKEY",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a light nighttime face moisturizer for oily skin. I don't want fragrance or SPF, and my budget is $20.",
+     "top_share": 0.9
+    },
+    {
+     "n": 21,
+     "runs": 23,
+     "agents": {
+      "grok-bot": 7,
+      "muse": 8,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "CeraVe",
+       "count": 17
+      },
+      {
+       "brand": "Vanicream",
+       "count": 3
+      },
+      {
+       "brand": "La Roche-Posay",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a fragrance-free face moisturizer in a pump bottle. No SPF, at least 75ml, under $25.",
+     "top_share": 0.8095238095238095
+    },
+    {
+     "n": 56,
+     "runs": 58,
+     "agents": {
+      "muse": 26,
+      "grok-bot": 23,
+      "instinct": 9
+     },
+     "shares": [
+      {
+       "brand": "CeraVe",
+       "count": 40
+      },
+      {
+       "brand": "Good Molecules",
+       "count": 7
+      },
+      {
+       "brand": "Neutrogena",
+       "count": 3
+      },
+      {
+       "brand": "BYOMA",
+       "count": 2
+      },
+      {
+       "brand": "Hydro",
+       "count": 1
+      },
+      {
+       "brand": "The Ordinary",
+       "count": 1
+      },
+      {
+       "brand": "Bubble",
+       "count": 1
+      },
+      {
+       "brand": "Clinique",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a fragrance-free gel face moisturizer for hot weather. I hate sticky textures. Keep it under $25.",
+     "top_share": 0.7142857142857143
+    },
+    {
+     "n": 20,
+     "runs": 22,
+     "agents": {
+      "muse": 7,
+      "instinct": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Vanicream",
+       "count": 13
+      },
+      {
+       "brand": "CeraVe",
+       "count": 5
+      },
+      {
+       "brand": "The Ordinary",
+       "count": 1
+      },
+      {
+       "brand": "Cetaphil",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a good-value fragrance-free face moisturizer without SPF. I can spend $30 and want the most for my money.",
+     "top_share": 0.65
+    },
+    {
+     "n": 55,
+     "runs": 57,
+     "agents": {
+      "muse": 23,
+      "grok-bot": 25,
+      "instinct": 9
+     },
+     "shares": [
+      {
+       "brand": "Vanicream",
+       "count": 34
+      },
+      {
+       "brand": "CeraVe",
+       "count": 7
+      },
+      {
+       "brand": "Aveeno",
+       "count": 5
+      },
+      {
+       "brand": "e.l.f.",
+       "count": 3
+      },
+      {
+       "brand": "La Roche-Posay",
+       "count": 2
+      },
+      {
+       "brand": "Neutrogena",
+       "count": 2
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      },
+      {
+       "brand": "BYOMA",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a simple fragrance-free face moisturizer for sensitive skin. Nothing fancy, just something under $20 that isn't greasy.",
+     "top_share": 0.6181818181818182
+    },
+    {
+     "n": 21,
+     "runs": 23,
+     "agents": {
+      "grok-bot": 8,
+      "muse": 7,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "CeraVe",
+       "count": 12
+      },
+      {
+       "brand": "Vanicream",
+       "count": 6
+      },
+      {
+       "brand": "BYOMA",
+       "count": 2
+      },
+      {
+       "brand": "Byoma",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a lightweight, fragrance-free face moisturizer under $25. I'd like ceramides and don't want SPF.",
+     "top_share": 0.5714285714285714
+    },
+    {
+     "n": 20,
+     "runs": 21,
+     "agents": {
+      "instinct": 8,
+      "muse": 7,
+      "grok-bot": 6
+     },
+     "shares": [
+      {
+       "brand": "CeraVe",
+       "count": 11
+      },
+      {
+       "brand": "e.l.f.",
+       "count": 3
+      },
+      {
+       "brand": "La Roche-Posay",
+       "count": 2
+      },
+      {
+       "brand": "Target",
+       "count": 1
+      },
+      {
+       "brand": "Vanicream",
+       "count": 1
+      },
+      {
+       "brand": "Neutrogena",
+       "count": 1
+      },
+      {
+       "brand": "Aveeno",
+       "count": 1
+      }
+     ],
+     "prompt": "I need a fragrance-free face moisturizer without SPF that I can pick up near 94103 today. Keep it under $25.",
+     "top_share": 0.55
+    },
+    {
+     "n": 21,
+     "runs": 23,
+     "agents": {
+      "grok-bot": 7,
+      "instinct": 8,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "CeraVe",
+       "count": 10
+      },
+      {
+       "brand": "Cetaphil",
+       "count": 3
+      },
+      {
+       "brand": "Vanicream",
+       "count": 3
+      },
+      {
+       "brand": "The INKEY",
+       "count": 1
+      },
+      {
+       "brand": "The Ordinary",
+       "count": 1
+      },
+      {
+       "brand": "La Roche-Posay",
+       "count": 1
+      },
+      {
+       "brand": "Good Molecules",
+       "count": 1
+      },
+      {
+       "brand": "Olay",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a rich face moisturizer for dry skin, under $25. Fragrance-free, no SPF, and at least 50ml.",
+     "top_share": 0.47619047619047616
+    },
+    {
+     "n": 19,
+     "runs": 21,
+     "agents": {
+      "instinct": 8,
+      "grok-bot": 7,
+      "muse": 6
+     },
+     "shares": [
+      {
+       "brand": "Vanicream",
+       "count": 8
+      },
+      {
+       "brand": "CeraVe",
+       "count": 5
+      },
+      {
+       "brand": "Good Molecules",
+       "count": 4
+      },
+      {
+       "brand": "COSRX",
+       "count": 1
+      },
+      {
+       "brand": "Naturium",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a face moisturizer that sits well under makeup without pilling. Fragrance-free, no SPF, and under $25.",
+     "top_share": 0.42105263157894735
+    },
+    {
+     "n": 24,
+     "runs": 26,
+     "agents": {
+      "instinct": 10,
+      "muse": 8,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Vanicream",
+       "count": 10
+      },
+      {
+       "brand": "The Ordinary",
+       "count": 6
+      },
+      {
+       "brand": "Neutrogena",
+       "count": 2
+      },
+      {
+       "brand": "Krave",
+       "count": 1
+      },
+      {
+       "brand": "CeraVe",
+       "count": 1
+      },
+      {
+       "brand": "Cetaphil",
+       "count": 1
+      },
+      {
+       "brand": "Purito",
+       "count": 1
+      },
+      {
+       "brand": "Good Molecules",
+       "count": 1
+      },
+      {
+       "brand": "Geek",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a lightweight, fragrance-free face moisturizer without niacinamide. At least 50ml and under $30.",
+     "top_share": 0.4166666666666667
+    }
+   ]
+  },
+  {
+   "category": "Headphones",
+   "bare": {
+    "n": 7,
+    "runs": 7,
+    "agents": {
+     "grok-bot": 6,
+     "muse": 1
+    },
+    "shares": [
+     {
+      "brand": "Sony",
+      "count": 6
+     },
+     {
+      "brand": "Sennheiser",
+      "count": 1
+     }
+    ]
+   },
+   "bare_prompts": [
+    "What are the best headphones for working from home?",
+    "What headphones should I buy for travel?",
+    "What are the best noise-canceling headphones?"
+   ],
+   "needs": [
+    {
+     "n": 22,
+     "runs": 23,
+     "agents": {
+      "instinct": 8,
+      "muse": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Sony",
+       "count": 19
+      },
+      {
+       "brand": "Bose",
+       "count": 2
+      },
+      {
+       "brand": "Sennheiser",
+       "count": 1
+      }
+     ],
+     "prompt": "Pick some great noise-canceling headphones for music and flying. I use them with my phone and laptop and can spend up to $600.",
+     "top_share": 0.8636363636363636
+    },
+    {
+     "n": 22,
+     "runs": 22,
+     "agents": {
+      "muse": 8,
+      "grok-bot": 7,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "Bose",
+       "count": 16
+      },
+      {
+       "brand": "Sony",
+       "count": 3
+      },
+      {
+       "brand": "Sennheiser",
+       "count": 2
+      },
+      {
+       "brand": "Soundcore",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me comfortable noise-canceling headphones for long flights, under $350. I wear glasses and switch between my phone and laptop.",
+     "top_share": 0.7272727272727273
+    },
+    {
+     "n": 22,
+     "runs": 22,
+     "agents": {
+      "instinct": 7,
+      "muse": 7,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Sony",
+       "count": 14
+      },
+      {
+       "brand": "Bose",
+       "count": 3
+      },
+      {
+       "brand": "Beats",
+       "count": 2
+      },
+      {
+       "brand": "Soundcore",
+       "count": 1
+      },
+      {
+       "brand": "Cleer",
+       "count": 1
+      },
+      {
+       "brand": "Sennheiser",
+       "count": 1
+      }
+     ],
+     "prompt": "I need noise-canceling headphones with a mic delivered to San Francisco within three days. Find me a good pair under $300.",
+     "top_share": 0.6363636363636364
+    },
+    {
+     "n": 56,
+     "runs": 56,
+     "agents": {
+      "grok-bot": 23,
+      "muse": 25,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "Sennheiser",
+       "count": 32
+      },
+      {
+       "brand": "Soundcore",
+       "count": 10
+      },
+      {
+       "brand": "JBL",
+       "count": 9
+      },
+      {
+       "brand": "Sony",
+       "count": 2
+      },
+      {
+       "brand": "Beats",
+       "count": 1
+      },
+      {
+       "brand": "thinksound",
+       "count": 1
+      },
+      {
+       "brand": "Audio-Technica",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me wireless over-ear headphones with at least 40 hours of battery life. I want good sound and don't want to spend more than $250.",
+     "top_share": 0.5714285714285714
+    },
+    {
+     "n": 23,
+     "runs": 23,
+     "agents": {
+      "muse": 8,
+      "instinct": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Soundcore",
+       "count": 13
+      },
+      {
+       "brand": "Sony",
+       "count": 9
+      },
+      {
+       "brand": "JBL",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me noise-canceling headphones under $150 for my commute. I want USB-C charging and the option to plug them in with a cable.",
+     "top_share": 0.5652173913043478
+    },
+    {
+     "n": 22,
+     "runs": 23,
+     "agents": {
+      "instinct": 7,
+      "muse": 8,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Soundcore",
+       "count": 11
+      },
+      {
+       "brand": "Sony",
+       "count": 3
+      },
+      {
+       "brand": "Nothing",
+       "count": 2
+      },
+      {
+       "brand": "Jabra",
+       "count": 1
+      },
+      {
+       "brand": "Shokz",
+       "count": 1
+      },
+      {
+       "brand": "Sennheiser",
+       "count": 1
+      },
+      {
+       "brand": "Edifier",
+       "count": 1
+      },
+      {
+       "brand": "Bose",
+       "count": 1
+      },
+      {
+       "brand": "Samsung",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me wireless headphones with a good microphone for taking calls on walks. Wind noise is my biggest problem. Budget is $250.",
+     "top_share": 0.5
+    },
+    {
+     "n": 52,
+     "runs": 53,
+     "agents": {
+      "muse": 23,
+      "grok-bot": 24,
+      "instinct": 6
+     },
+     "shares": [
+      {
+       "brand": "Soundcore",
+       "count": 24
+      },
+      {
+       "brand": "Sony",
+       "count": 14
+      },
+      {
+       "brand": "JBL",
+       "count": 6
+      },
+      {
+       "brand": "Skullcandy",
+       "count": 3
+      },
+      {
+       "brand": "Edifier",
+       "count": 2
+      },
+      {
+       "brand": "Bose",
+       "count": 1
+      },
+      {
+       "brand": "FiiO",
+       "count": 1
+      },
+      {
+       "brand": "Sennheiser",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me over-ear noise-canceling headphones that pack down small for travel. I want a black pair under $200.",
+     "top_share": 0.46153846153846156
+    },
+    {
+     "n": 23,
+     "runs": 25,
+     "agents": {
+      "instinct": 8,
+      "muse": 9,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Fairphone",
+       "count": 10
+      },
+      {
+       "brand": "Sennheiser",
+       "count": 6
+      },
+      {
+       "brand": "Sony",
+       "count": 5
+      },
+      {
+       "brand": "Marshall",
+       "count": 1
+      },
+      {
+       "brand": "Fairbuds",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me noise-canceling headphones under $400 that I can keep for years. I want to be able to replace the ear pads and get them repaired.",
+     "top_share": 0.43478260869565216
+    },
+    {
+     "n": 24,
+     "runs": 24,
+     "agents": {
+      "muse": 8,
+      "grok-bot": 8,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "Sony",
+       "count": 10
+      },
+      {
+       "brand": "Bose",
+       "count": 8
+      },
+      {
+       "brand": "Sennheiser",
+       "count": 5
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me comfortable over-ear headphones that switch easily between two phones and a laptop. I'd like noise cancellation and a price under $300.",
+     "top_share": 0.4166666666666667
+    },
+    {
+     "n": 23,
+     "runs": 23,
+     "agents": {
+      "instinct": 7,
+      "muse": 8,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Poly",
+       "count": 8
+      },
+      {
+       "brand": "Logitech",
+       "count": 6
+      },
+      {
+       "brand": "Jabra",
+       "count": 6
+      },
+      {
+       "brand": "Sony",
+       "count": 2
+      },
+      {
+       "brand": "MOMENTUM",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me headphones for calls in a noisy office. They need to stay connected to my laptop and phone at the same time. Budget is $250.",
+     "top_share": 0.34782608695652173
+    }
+   ]
+  },
+  {
+   "category": "Computers for local AI",
+   "bare": {
+    "n": 6,
+    "runs": 6,
+    "agents": {
+     "grok-bot": 4,
+     "muse": 2
+    },
+    "shares": [
+     {
+      "brand": "Apple",
+      "count": 3
+     },
+     {
+      "brand": "It depends",
+      "count": 2
+     },
+     {
+      "brand": "NVIDIA",
+      "count": 1
+     }
+    ]
+   },
+   "bare_prompts": [
+    "What's the best desktop for running large language models at home?",
+    "What's the best computer for running AI models locally?",
+    "What laptop should I buy for coding and AI work?"
+   ],
+   "needs": [
+    {
+     "n": 21,
+     "runs": 23,
+     "agents": {
+      "instinct": 8,
+      "grok-bot": 7,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Apple",
+       "count": 16
+      },
+      {
+       "brand": "GMKtec",
+       "count": 2
+      },
+      {
+       "brand": "CORSAIR",
+       "count": 1
+      },
+      {
+       "brand": "Beelink",
+       "count": 1
+      },
+      {
+       "brand": "MINISFORUM",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a quiet little computer I can leave running a local 14B AI assistant all day. Budget is $2,500, with 32GB RAM and a 1TB SSD.",
+     "top_share": 0.7619047619047619
+    },
+    {
+     "n": 21,
+     "runs": 22,
+     "agents": {
+      "instinct": 8,
+      "muse": 8,
+      "grok-bot": 6
+     },
+     "shares": [
+      {
+       "brand": "Apple",
+       "count": 16
+      },
+      {
+       "brand": "DGX",
+       "count": 2
+      },
+      {
+       "brand": "NVIDIA",
+       "count": 2
+      },
+      {
+       "brand": "ASUS",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a desktop under $8,000 that can run 70B AI models locally. I want something I can actually use for chatting, not just squeeze the model onto.",
+     "top_share": 0.7619047619047619
+    },
+    {
+     "n": 21,
+     "runs": 23,
+     "agents": {
+      "muse": 8,
+      "grok-bot": 7,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "Apple",
+       "count": 13
+      },
+      {
+       "brand": "GMKtec",
+       "count": 5
+      },
+      {
+       "brand": "Framework",
+       "count": 1
+      },
+      {
+       "brand": "GEEKOM",
+       "count": 1
+      },
+      {
+       "brand": "AMD",
+       "count": 1
+      }
+     ],
+     "prompt": "I want a small computer that can search my documents using a local 32B model. Find me one under $4,000 that keeps everything off the cloud.",
+     "top_share": 0.6190476190476191
+    },
+    {
+     "n": 21,
+     "runs": 22,
+     "agents": {
+      "muse": 8,
+      "instinct": 7,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "ASUS",
+       "count": 12
+      },
+      {
+       "brand": "Apple",
+       "count": 5
+      },
+      {
+       "brand": "Acer",
+       "count": 1
+      },
+      {
+       "brand": "HyperX",
+       "count": 1
+      },
+      {
+       "brand": "MSI",
+       "count": 1
+      },
+      {
+       "brand": "HP",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a portable computer for running large AI models without an internet connection. Budget is $5,000, and I need at least 1TB of storage.",
+     "top_share": 0.5714285714285714
+    },
+    {
+     "n": 24,
+     "runs": 25,
+     "agents": {
+      "instinct": 8,
+      "muse": 9,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "GMKtec",
+       "count": 11
+      },
+      {
+       "brand": "Apple",
+       "count": 5
+      },
+      {
+       "brand": "Framework",
+       "count": 3
+      },
+      {
+       "brand": "DGX",
+       "count": 1
+      },
+      {
+       "brand": "HP",
+       "count": 1
+      },
+      {
+       "brand": "BOSGAME",
+       "count": 1
+      },
+      {
+       "brand": "NVIDIA",
+       "count": 1
+      },
+      {
+       "brand": "Corsair",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a compact computer for experimenting with 70B AI models at home. Budget is $5,000, and I don't have space for a tower.",
+     "top_share": 0.4583333333333333
+    },
+    {
+     "n": 19,
+     "runs": 22,
+     "agents": {
+      "instinct": 6,
+      "muse": 8,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "MSI",
+       "count": 8
+      },
+      {
+       "brand": "Lenovo",
+       "count": 3
+      },
+      {
+       "brand": "NVIDIA",
+       "count": 2
+      },
+      {
+       "brand": "Apple",
+       "count": 2
+      },
+      {
+       "brand": "Windows",
+       "count": 1
+      },
+      {
+       "brand": "Intel",
+       "count": 1
+      },
+      {
+       "brand": "HP",
+       "count": 1
+      },
+      {
+       "brand": "ASUS",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a laptop for local AI work, video editing, and some gaming. I can spend $4,000 and need 64GB of RAM and a 1TB SSD.",
+     "top_share": 0.42105263157894735
+    },
+    {
+     "n": 21,
+     "runs": 22,
+     "agents": {
+      "muse": 7,
+      "grok-bot": 8,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "Corsair",
+       "count": 6
+      },
+      {
+       "brand": "MSI",
+       "count": 3
+      },
+      {
+       "brand": "HP",
+       "count": 2
+      },
+      {
+       "brand": "Skytech",
+       "count": 2
+      },
+      {
+       "brand": "Lenovo",
+       "count": 2
+      },
+      {
+       "brand": "OMEN",
+       "count": 1
+      },
+      {
+       "brand": "CORSAIR",
+       "count": 1
+      },
+      {
+       "brand": "CyberPowerPC",
+       "count": 1
+      },
+      {
+       "brand": "TECHNOID",
+       "count": 1
+      },
+      {
+       "brand": "Empowered",
+       "count": 1
+      },
+      {
+       "brand": "Apple",
+       "count": 1
+      }
+     ],
+     "prompt": "Pick a desktop for 3D rendering, video editing, and local image generation. Keep it under $6,000 with at least 64GB RAM and 2TB storage.",
+     "top_share": 0.2857142857142857
+    },
+    {
+     "n": 22,
+     "runs": 24,
+     "agents": {
+      "muse": 9,
+      "instinct": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Lenovo",
+       "count": 6
+      },
+      {
+       "brand": "ASUS",
+       "count": 3
+      },
+      {
+       "brand": "Apple",
+       "count": 3
+      },
+      {
+       "brand": "Dell",
+       "count": 3
+      },
+      {
+       "brand": "HP",
+       "count": 2
+      },
+      {
+       "brand": "MSI",
+       "count": 2
+      },
+      {
+       "brand": "NVIDIA",
+       "count": 2
+      },
+      {
+       "brand": "Acer",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a small AI workstation for prototyping and fine-tuning models locally. I can spend $6,000 and want something ready to use.",
+     "top_share": 0.2727272727272727
+    },
+    {
+     "n": 23,
+     "runs": 24,
+     "agents": {
+      "muse": 9,
+      "grok-bot": 8,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "MSI",
+       "count": 6
+      },
+      {
+       "brand": "HP",
+       "count": 5
+      },
+      {
+       "brand": "Corsair",
+       "count": 2
+      },
+      {
+       "brand": "Kingstarusa",
+       "count": 1
+      },
+      {
+       "brand": "Micro",
+       "count": 1
+      },
+      {
+       "brand": "Maingear",
+       "count": 1
+      },
+      {
+       "brand": "TECHNOID",
+       "count": 1
+      },
+      {
+       "brand": "AMD",
+       "count": 1
+      },
+      {
+       "brand": "Empowered",
+       "count": 1
+      },
+      {
+       "brand": "CyberPowerPC",
+       "count": 1
+      },
+      {
+       "brand": "NVIDIA",
+       "count": 1
+      },
+      {
+       "brand": "iBUYPOWER",
+       "count": 1
+      },
+      {
+       "brand": "Lenovo",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a desktop for training small AI models and coding. I have $8,000 to spend and need at least 1TB of storage.",
+     "top_share": 0.2608695652173913
+    },
+    {
+     "n": 23,
+     "runs": 24,
+     "agents": {
+      "muse": 8,
+      "instinct": 8,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "ASUS",
+       "count": 4
+      },
+      {
+       "brand": "Apple",
+       "count": 3
+      },
+      {
+       "brand": "NVIDIA",
+       "count": 3
+      },
+      {
+       "brand": "Acer",
+       "count": 2
+      },
+      {
+       "brand": "Gigabyte",
+       "count": 2
+      },
+      {
+       "brand": "DGX",
+       "count": 1
+      },
+      {
+       "brand": "GIGABYTE",
+       "count": 1
+      },
+      {
+       "brand": "Stratos",
+       "count": 1
+      },
+      {
+       "brand": "MINISFORUM",
+       "count": 1
+      },
+      {
+       "brand": "GMKtec",
+       "count": 1
+      },
+      {
+       "brand": "Linux",
+       "count": 1
+      },
+      {
+       "brand": "Lenovo",
+       "count": 1
+      },
+      {
+       "brand": "HP",
+       "count": 1
+      },
+      {
+       "brand": "Modal",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me an AI development setup under $8,000 for two engineers to share. We need to run models locally and keep client data private.",
+     "top_share": 0.17391304347826086
+    }
+   ]
+  },
+  {
+   "category": "Presentation software",
+   "bare": {
+    "n": 5,
+    "runs": 5,
+    "agents": {
+     "muse": 1,
+     "grok-bot": 4
+    },
+    "shares": [
+     {
+      "brand": "Google Slides",
+      "count": 2
+     },
+     {
+      "brand": "It depends",
+      "count": 2
+     },
+     {
+      "brand": "PowerPoint",
+      "count": 1
+     }
+    ]
+   },
+   "bare_prompts": [
+    "What should I use to make slides for a pitch?",
+    "What's the best free presentation tool?",
+    "What's the best presentation software?"
+   ],
+   "needs": [
+    {
+     "n": 22,
+     "runs": 22,
+     "agents": {
+      "grok-bot": 7,
+      "muse": 8,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "Gamma",
+       "count": 20
+      },
+      {
+       "brand": "Beautiful.ai",
+       "count": 1
+      },
+      {
+       "brand": "Reline",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a tool that can turn messy meeting notes into a polished slide deck. I'm not a designer and can spend $15 a month.",
+     "top_share": 0.9090909090909091
+    },
+    {
+     "n": 21,
+     "runs": 22,
+     "agents": {
+      "instinct": 7,
+      "muse": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Google Slides",
+       "count": 16
+      },
+      {
+       "brand": "Pitch",
+       "count": 3
+      },
+      {
+       "brand": "Gamma",
+       "count": 2
+      }
+     ],
+     "prompt": "Find a presentation tool my cofounder and I can edit together. We need PDF exports and can spend $40 a month between us.",
+     "top_share": 0.7619047619047619
+    },
+    {
+     "n": 22,
+     "runs": 22,
+     "agents": {
+      "muse": 7,
+      "instinct": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Google Slides",
+       "count": 16
+      },
+      {
+       "brand": "Canva",
+       "count": 2
+      },
+      {
+       "brand": "Pitch",
+       "count": 1
+      },
+      {
+       "brand": "Gamma",
+       "count": 1
+      },
+      {
+       "brand": "PowerPoint",
+       "count": 1
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a presentation tool I can edit on my laptop and present from my phone. I need PDF downloads and can spend $20 a month.",
+     "top_share": 0.7272727272727273
+    },
+    {
+     "n": 22,
+     "runs": 22,
+     "agents": {
+      "instinct": 7,
+      "muse": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Canva",
+       "count": 15
+      },
+      {
+       "brand": "Pitch",
+       "count": 4
+      },
+      {
+       "brand": "Beautiful.ai",
+       "count": 2
+      },
+      {
+       "brand": "PowerPoint",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me an easy presentation tool that lets me use our own fonts and colors. I need editable slide exports. Budget is $20 a month.",
+     "top_share": 0.6818181818181818
+    },
+    {
+     "n": 23,
+     "runs": 23,
+     "agents": {
+      "muse": 9,
+      "instinct": 7,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Pitch",
+       "count": 15
+      },
+      {
+       "brand": "Google Slides",
+       "count": 4
+      },
+      {
+       "brand": "Gamma",
+       "count": 3
+      },
+      {
+       "brand": "PowerPoint",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a presentation tool for a confidential sales deck. I need PDF exports and control over who can see it. Budget is $30 a month.",
+     "top_share": 0.6521739130434783
+    },
+    {
+     "n": 21,
+     "runs": 21,
+     "agents": {
+      "instinct": 7,
+      "grok-bot": 6,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Gamma",
+       "count": 13
+      },
+      {
+       "brand": "Google Slides",
+       "count": 3
+      },
+      {
+       "brand": "Plus",
+       "count": 3
+      },
+      {
+       "brand": "SlidesAI",
+       "count": 1
+      },
+      {
+       "brand": "PowerPoint",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a presentation tool that turns a text brief into editable slides. I can pay $25 a month, but don't want an annual subscription.",
+     "top_share": 0.6190476190476191
+    },
+    {
+     "n": 18,
+     "runs": 23,
+     "agents": {
+      "muse": 8,
+      "instinct": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "PowerPoint",
+       "count": 8
+      },
+      {
+       "brand": "Google Slides",
+       "count": 6
+      },
+      {
+       "brand": "Muse",
+       "count": 1
+      },
+      {
+       "brand": "python-pptx",
+       "count": 1
+      },
+      {
+       "brand": "LibreOffice",
+       "count": 1
+      },
+      {
+       "brand": "Keynote",
+       "count": 1
+      }
+     ],
+     "prompt": "Make me a six-slide deck about our app for tracking team decisions. I need an editable file. Use something free, without starting a trial.",
+     "top_share": 0.4444444444444444
+    },
+    {
+     "n": 21,
+     "runs": 23,
+     "agents": {
+      "muse": 8,
+      "instinct": 8,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Pitch",
+       "count": 8
+      },
+      {
+       "brand": "Canva",
+       "count": 6
+      },
+      {
+       "brand": "Better",
+       "count": 2
+      },
+      {
+       "brand": "Gamma",
+       "count": 2
+      },
+      {
+       "brand": "Prospero",
+       "count": 1
+      },
+      {
+       "brand": "Qwilr",
+       "count": 1
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a tool for making client proposal decks from reusable templates. I need PDF exports and want to stay under $30 a month.",
+     "top_share": 0.38095238095238093
+    }
+   ]
+  },
+  {
+   "category": "Grocery delivery",
+   "bare": {
+    "n": 4,
+    "runs": 4,
+    "agents": {
+     "grok-bot": 3,
+     "muse": 1
+    },
+    "shares": [
+     {
+      "brand": "Walmart",
+      "count": 2
+     },
+     {
+      "brand": "It depends",
+      "count": 1
+     },
+     {
+      "brand": "Instacart",
+      "count": 1
+     }
+    ]
+   },
+   "bare_prompts": [
+    "What's the best grocery delivery service?",
+    "What grocery delivery app should I use?",
+    "What's the cheapest way to get groceries delivered?"
+   ],
+   "needs": [
+    {
+     "n": 20,
+     "runs": 22,
+     "agents": {
+      "instinct": 8,
+      "grok-bot": 7,
+      "muse": 7
+     },
+     "shares": [
+      {
+       "brand": "Walmart",
+       "count": 13
+      },
+      {
+       "brand": "Safeway",
+       "count": 2
+      },
+      {
+       "brand": "Sprouts",
+       "count": 1
+      },
+      {
+       "brand": "Stop",
+       "count": 1
+      },
+      {
+       "brand": "Smart",
+       "count": 1
+      },
+      {
+       "brand": "Instacart",
+       "count": 1
+      },
+      {
+       "brand": "Planet Oat",
+       "count": 1
+      }
+     ],
+     "prompt": "Put together a breakfast grocery order: unsweetened oat milk, plain Greek yogurt, rolled oats, and six bananas. Keep the groceries under $35 and use one store if possible.",
+     "top_share": 0.65
+    },
+    {
+     "n": 19,
+     "runs": 21,
+     "agents": {
+      "instinct": 7,
+      "grok-bot": 7,
+      "muse": 7
+     },
+     "shares": [
+      {
+       "brand": "Walmart",
+       "count": 9
+      },
+      {
+       "brand": "Instacart",
+       "count": 4
+      },
+      {
+       "brand": "Kroger",
+       "count": 1
+      },
+      {
+       "brand": "Shop",
+       "count": 1
+      },
+      {
+       "brand": "Barilla",
+       "count": 1
+      },
+      {
+       "brand": "Stop",
+       "count": 1
+      },
+      {
+       "brand": "Target",
+       "count": 1
+      },
+      {
+       "brand": "Giant",
+       "count": 1
+      }
+     ],
+     "prompt": "Put together groceries for tomato-and-chickpea pasta for four, under $25. I need pasta, canned chickpeas, canned tomatoes, an onion, and garlic. I've already got oil, salt, and pepper.",
+     "top_share": 0.47368421052631576
+    },
+    {
+     "n": 19,
+     "runs": 22,
+     "agents": {
+      "muse": 8,
+      "instinct": 7,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Walmart",
+       "count": 9
+      },
+      {
+       "brand": "Schnucks",
+       "count": 2
+      },
+      {
+       "brand": "Fleet",
+       "count": 2
+      },
+      {
+       "brand": "Great",
+       "count": 2
+      },
+      {
+       "brand": "Amazon",
+       "count": 1
+      },
+      {
+       "brand": "Menards",
+       "count": 1
+      },
+      {
+       "brand": "Good &",
+       "count": 1
+      },
+      {
+       "brand": "Mom",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me the best value on plain old-fashioned oats. I want at least 32oz and don't want to spend more than $8.",
+     "top_share": 0.47368421052631576
+    },
+    {
+     "n": 22,
+     "runs": 23,
+     "agents": {
+      "instinct": 8,
+      "grok-bot": 7,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Target",
+       "count": 10
+      },
+      {
+       "brand": "Good &",
+       "count": 4
+      },
+      {
+       "brand": "Walmart",
+       "count": 3
+      },
+      {
+       "brand": "Instacart",
+       "count": 3
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      },
+      {
+       "brand": "Safeway",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a 32oz tub of plain nonfat Greek yogurt under $7 for delivery in San Francisco.",
+     "top_share": 0.45454545454545453
+    },
+    {
+     "n": 17,
+     "runs": 19,
+     "agents": {
+      "instinct": 6,
+      "grok-bot": 7,
+      "muse": 6
+     },
+     "shares": [
+      {
+       "brand": "Walmart",
+       "count": 7
+      },
+      {
+       "brand": "Lavazza",
+       "count": 2
+      },
+      {
+       "brand": "Community",
+       "count": 2
+      },
+      {
+       "brand": "Starbucks",
+       "count": 1
+      },
+      {
+       "brand": "Warpath",
+       "count": 1
+      },
+      {
+       "brand": "Dunkin'",
+       "count": 1
+      },
+      {
+       "brand": "Amazon",
+       "count": 1
+      },
+      {
+       "brand": "Dunkin\u2019",
+       "count": 1
+      },
+      {
+       "brand": "Target",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a 12oz bag of medium-roast whole-bean coffee under $16 that I can get delivered.",
+     "top_share": 0.4117647058823529
+    },
+    {
+     "n": 23,
+     "runs": 23,
+     "agents": {
+      "instinct": 8,
+      "grok-bot": 8,
+      "muse": 7
+     },
+     "shares": [
+      {
+       "brand": "Vitacost",
+       "count": 8
+      },
+      {
+       "brand": "Bob",
+       "count": 5
+      },
+      {
+       "brand": "Walmart",
+       "count": 3
+      },
+      {
+       "brand": "Instacart",
+       "count": 2
+      },
+      {
+       "brand": "Thrive",
+       "count": 2
+      },
+      {
+       "brand": "AmazonFresh",
+       "count": 1
+      },
+      {
+       "brand": "Target",
+       "count": 1
+      },
+      {
+       "brand": "Whole Foods",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me organic old-fashioned rolled oats for overnight oats. At least 32oz and under $8.",
+     "top_share": 0.34782608695652173
+    },
+    {
+     "n": 52,
+     "runs": 55,
+     "agents": {
+      "muse": 23,
+      "grok-bot": 24,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "Instacart",
+       "count": 18
+      },
+      {
+       "brand": "Target",
+       "count": 10
+      },
+      {
+       "brand": "Oatly",
+       "count": 8
+      },
+      {
+       "brand": "Walmart",
+       "count": 5
+      },
+      {
+       "brand": "Good Eggs",
+       "count": 3
+      },
+      {
+       "brand": "Fairway",
+       "count": 2
+      },
+      {
+       "brand": "Gopuff",
+       "count": 2
+      },
+      {
+       "brand": "Minor",
+       "count": 1
+      },
+      {
+       "brand": "Thrive",
+       "count": 1
+      },
+      {
+       "brand": "Safeway",
+       "count": 1
+      },
+      {
+       "brand": "Shop",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me an oat milk that foams well for cappuccinos. I want one carton for delivery and don't want to spend more than $6.",
+     "top_share": 0.34615384615384615
+    },
+    {
+     "n": 22,
+     "runs": 22,
+     "agents": {
+      "instinct": 7,
+      "muse": 7,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Walmart",
+       "count": 7
+      },
+      {
+       "brand": "Instacart",
+       "count": 6
+      },
+      {
+       "brand": "Almond",
+       "count": 2
+      },
+      {
+       "brand": "Good &",
+       "count": 2
+      },
+      {
+       "brand": "Target",
+       "count": 1
+      },
+      {
+       "brand": "Shaw",
+       "count": 1
+      },
+      {
+       "brand": "Gopuff",
+       "count": 1
+      },
+      {
+       "brand": "Kroger",
+       "count": 1
+      },
+      {
+       "brand": "giantfood.com",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me unsweetened almond milk without vanilla flavor. I'd like a refrigerated carton or bottle under $6 for delivery.",
+     "top_share": 0.3181818181818182
+    },
+    {
+     "n": 21,
+     "runs": 22,
+     "agents": {
+      "instinct": 7,
+      "grok-bot": 7,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Good Eggs",
+       "count": 6
+      },
+      {
+       "brand": "Instacart",
+       "count": 5
+      },
+      {
+       "brand": "Safeway",
+       "count": 4
+      },
+      {
+       "brand": "Sprouts",
+       "count": 3
+      },
+      {
+       "brand": "Oatly",
+       "count": 2
+      },
+      {
+       "brand": "Walmart",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a 64oz carton of refrigerated unsweetened oat milk for under $7 that I can get delivered in San Francisco.",
+     "top_share": 0.2857142857142857
+    },
+    {
+     "n": 48,
+     "runs": 51,
+     "agents": {
+      "instinct": 6,
+      "grok-bot": 22,
+      "muse": 23
+     },
+     "shares": [
+      {
+       "brand": "Walmart",
+       "count": 11
+      },
+      {
+       "brand": "Instacart",
+       "count": 9
+      },
+      {
+       "brand": "Whole Foods",
+       "count": 6
+      },
+      {
+       "brand": "Target",
+       "count": 4
+      },
+      {
+       "brand": "Chobani",
+       "count": 4
+      },
+      {
+       "brand": "Amazon",
+       "count": 4
+      },
+      {
+       "brand": "Oikos",
+       "count": 2
+      },
+      {
+       "brand": "Safeway",
+       "count": 2
+      },
+      {
+       "brand": "Kroger",
+       "count": 1
+      },
+      {
+       "brand": "FoodMaxx",
+       "count": 1
+      },
+      {
+       "brand": "Hy-Vee",
+       "count": 1
+      },
+      {
+       "brand": "Stop",
+       "count": 1
+      },
+      {
+       "brand": "Good &",
+       "count": 1
+      },
+      {
+       "brand": "FreshDirect",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a big tub of high-protein yogurt for breakfast. No added sugar, under $8, and available for delivery.",
+     "top_share": 0.22916666666666666
+    }
+   ]
+  },
+  {
+   "category": "Running shoes and rain jackets",
+   "bare": {
+    "n": 9,
+    "runs": 9,
+    "agents": {
+     "muse": 3,
+     "grok-bot": 6
+    },
+    "shares": [
+     {
+      "brand": "Brooks",
+      "count": 4
+     },
+     {
+      "brand": "HOKA",
+      "count": 3
+     },
+     {
+      "brand": "New Balance",
+      "count": 1
+     },
+     {
+      "brand": "ASICS",
+      "count": 1
+     }
+    ]
+   },
+   "bare_prompts": [
+    "What running shoes should I buy to train for a half marathon?",
+    "What are the best sneakers for walking all day?",
+    "Find me the best running shoes for daily 5K runs. Men's US 10."
+   ],
+   "needs": [
+    {
+     "n": 20,
+     "runs": 21,
+     "agents": {
+      "instinct": 6,
+      "grok-bot": 7,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Columbia",
+       "count": 12
+      },
+      {
+       "brand": "Carhartt",
+       "count": 2
+      },
+      {
+       "brand": "Lands'",
+       "count": 2
+      },
+      {
+       "brand": "Marmot",
+       "count": 1
+      },
+      {
+       "brand": "The North",
+       "count": 1
+      },
+      {
+       "brand": "Helly",
+       "count": 1
+      },
+      {
+       "brand": "Timberland",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a black rain jacket for a wet-weather vacation. Women's medium, under $150, delivered to San Francisco within three days.",
+     "top_share": 0.6
+    },
+    {
+     "n": 23,
+     "runs": 24,
+     "agents": {
+      "muse": 9,
+      "grok-bot": 7,
+      "instinct": 8
+     },
+     "shares": [
+      {
+       "brand": "REI",
+       "count": 13
+      },
+      {
+       "brand": "K\u00dcHL",
+       "count": 3
+      },
+      {
+       "brand": "Patagonia",
+       "count": 3
+      },
+      {
+       "brand": "Torrentshell",
+       "count": 1
+      },
+      {
+       "brand": "The North",
+       "count": 1
+      },
+      {
+       "brand": "Sports",
+       "count": 1
+      },
+      {
+       "brand": "Columbia",
+       "count": 1
+      }
+     ],
+     "prompt": "I need a waterproof hooded jacket I can pick up near 94103 today. Men's large, under $200.",
+     "top_share": 0.5652173913043478
+    },
+    {
+     "n": 23,
+     "runs": 23,
+     "agents": {
+      "instinct": 7,
+      "grok-bot": 8,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Brooks",
+       "count": 12
+      },
+      {
+       "brand": "HOKA",
+       "count": 5
+      },
+      {
+       "brand": "ASICS",
+       "count": 2
+      },
+      {
+       "brand": "Saucony",
+       "count": 2
+      },
+      {
+       "brand": "Nike",
+       "count": 1
+      },
+      {
+       "brand": "New Balance",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me running shoes under $160 for easy 5K runs a few times a week. I'm a men's US 10, regular width.",
+     "top_share": 0.5217391304347826
+    },
+    {
+     "n": 22,
+     "runs": 23,
+     "agents": {
+      "instinct": 8,
+      "grok-bot": 7,
+      "muse": 8
+     },
+     "shares": [
+      {
+       "brand": "Patagonia",
+       "count": 11
+      },
+      {
+       "brand": "REI",
+       "count": 4
+      },
+      {
+       "brand": "The North",
+       "count": 1
+      },
+      {
+       "brand": "Carhartt",
+       "count": 1
+      },
+      {
+       "brand": "It depends",
+       "count": 1
+      },
+      {
+       "brand": "Columbia",
+       "count": 1
+      },
+      {
+       "brand": "Marmot",
+       "count": 1
+      },
+      {
+       "brand": "Quest",
+       "count": 1
+      },
+      {
+       "brand": "Helly",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a waterproof jacket for walking to work in San Francisco. Men's medium, under $200, with a hood and room for a sweater.",
+     "top_share": 0.5
+    },
+    {
+     "n": 22,
+     "runs": 23,
+     "agents": {
+      "instinct": 6,
+      "muse": 10,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Brooks",
+       "count": 10
+      },
+      {
+       "brand": "HOKA",
+       "count": 5
+      },
+      {
+       "brand": "ASICS",
+       "count": 3
+      },
+      {
+       "brand": "New Balance",
+       "count": 3
+      },
+      {
+       "brand": "Nike",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me cushioned running shoes for easy road runs. I need men's US 10 wide and want to stay under $170.",
+     "top_share": 0.45454545454545453
+    },
+    {
+     "n": 23,
+     "runs": 23,
+     "agents": {
+      "instinct": 7,
+      "muse": 9,
+      "grok-bot": 7
+     },
+     "shares": [
+      {
+       "brand": "Brooks",
+       "count": 10
+      },
+      {
+       "brand": "HOKA",
+       "count": 5
+      },
+      {
+       "brand": "Nike",
+       "count": 4
+      },
+      {
+       "brand": "ASICS",
+       "count": 3
+      },
+      {
+       "brand": "New Balance",
+       "count": 1
+      }
+     ],
+     "prompt": "Pick some comfortable running shoes under $160 for easy 5-10K runs. I wear women's US 8 and prefer dark colors.",
+     "top_share": 0.43478260869565216
+    },
+    {
+     "n": 23,
+     "runs": 23,
+     "agents": {
+      "muse": 9,
+      "grok-bot": 7,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "Skechers",
+       "count": 9
+      },
+      {
+       "brand": "HOKA",
+       "count": 5
+      },
+      {
+       "brand": "New Balance",
+       "count": 5
+      },
+      {
+       "brand": "Reebok",
+       "count": 2
+      },
+      {
+       "brand": "Rockport",
+       "count": 1
+      },
+      {
+       "brand": "ASICS",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me black shoes for long daily walks. Men's US 10, regular width, under $120. Comfort matters more than looks.",
+     "top_share": 0.391304347826087
+    },
+    {
+     "n": 48,
+     "runs": 54,
+     "agents": {
+      "grok-bot": 24,
+      "muse": 23,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "Brooks",
+       "count": 18
+      },
+      {
+       "brand": "HOKA",
+       "count": 14
+      },
+      {
+       "brand": "ASICS",
+       "count": 8
+      },
+      {
+       "brand": "New Balance",
+       "count": 5
+      },
+      {
+       "brand": "Saucony",
+       "count": 2
+      },
+      {
+       "brand": "On",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me cushioned shoes for half-marathon training. I need men's US 10 wide and can spend up to $180.",
+     "top_share": 0.375
+    },
+    {
+     "n": 22,
+     "runs": 22,
+     "agents": {
+      "muse": 7,
+      "instinct": 7,
+      "grok-bot": 8
+     },
+     "shares": [
+      {
+       "brand": "Showers",
+       "count": 6
+      },
+      {
+       "brand": "Pearl",
+       "count": 4
+      },
+      {
+       "brand": "Pactimo",
+       "count": 4
+      },
+      {
+       "brand": "Endura",
+       "count": 2
+      },
+      {
+       "brand": "Rapha",
+       "count": 2
+      },
+      {
+       "brand": "GOREWEAR",
+       "count": 2
+      },
+      {
+       "brand": "REI",
+       "count": 1
+      },
+      {
+       "brand": "Proviz",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a waterproof jacket for cycling to work. Men's medium, black, under $250. I don't want to overheat in it.",
+     "top_share": 0.2727272727272727
+    },
+    {
+     "n": 53,
+     "runs": 55,
+     "agents": {
+      "grok-bot": 24,
+      "muse": 24,
+      "instinct": 7
+     },
+     "shares": [
+      {
+       "brand": "Eddie",
+       "count": 14
+      },
+      {
+       "brand": "REI",
+       "count": 8
+      },
+      {
+       "brand": "Patagonia",
+       "count": 6
+      },
+      {
+       "brand": "Columbia",
+       "count": 5
+      },
+      {
+       "brand": "Topo",
+       "count": 3
+      },
+      {
+       "brand": "Rab",
+       "count": 3
+      },
+      {
+       "brand": "Marmot",
+       "count": 3
+      },
+      {
+       "brand": "Lands'",
+       "count": 2
+      },
+      {
+       "brand": "The North",
+       "count": 2
+      },
+      {
+       "brand": "Helly",
+       "count": 2
+      },
+      {
+       "brand": "Outdoor",
+       "count": 2
+      },
+      {
+       "brand": "Cotopaxi",
+       "count": 1
+      },
+      {
+       "brand": "Backcountry",
+       "count": 1
+      },
+      {
+       "brand": "Rainfoil",
+       "count": 1
+      }
+     ],
+     "prompt": "Find me a packable waterproof jacket for hiking and commuting. Women's medium, under $180.",
+     "top_share": 0.2641509433962264
+    }
+   ]
+  }
+ ]
+}
