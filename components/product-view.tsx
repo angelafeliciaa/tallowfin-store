@@ -7,6 +7,7 @@ import EmailPopup from "@/components/email-popup";
 import PriceLine from "@/components/price-line";
 import StockLine from "@/components/stock-line";
 import {
+  AI_NOTE,
   PRICE_USD,
   type Product,
   RETURN_POLICY,
@@ -93,6 +94,8 @@ export default async function ProductView({ product, brandName, treatment, slug,
               <li key={spec}>{spec}</li>
             ))}
           </ul>
+          {treatment === "ai-note" && <p>{AI_NOTE}</p>}
+          {treatment === "ai-note-hidden" && <p className="sr-only">{AI_NOTE}</p>}
           <div className="policy">
             <p>
               <strong>Shipping:</strong> {SHIPPING_POLICY}
