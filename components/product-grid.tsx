@@ -8,7 +8,7 @@ export default function ProductGrid({ listing }: { listing: Listing }) {
   return (
     <div>
       <h1>Insulated bottles</h1>
-      <p className="muted">Our 24 oz insulated bottle in four colors.</p>
+      <p className="muted">Our 24 oz insulated bottle in {listing.order.length === 8 ? "eight" : "four"} colors.</p>
       <div className="cards">
         {listing.order.map((productId) => {
           const product = PRODUCTS[productId];

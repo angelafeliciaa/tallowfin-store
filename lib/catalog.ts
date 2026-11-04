@@ -1,4 +1,4 @@
-export type ProductId = "ridge" | "coast" | "pine" | "ember";
+export type ProductId = "ridge" | "coast" | "pine" | "ember" | "harbor" | "summit" | "canyon" | "meadow";
 
 export type Product = {
   id: ProductId;
@@ -11,9 +11,14 @@ export const PRODUCTS: Record<ProductId, Product> = {
   coast: { id: "coast", name: "Tallowfin Coast Bottle, 24 oz", color: "Sand" },
   pine: { id: "pine", name: "Tallowfin Pine Bottle, 24 oz", color: "Forest" },
   ember: { id: "ember", name: "Tallowfin Ember Bottle, 24 oz", color: "Clay" },
+  harbor: { id: "harbor", name: "Tallowfin Harbor Bottle, 24 oz", color: "Mist" },
+  summit: { id: "summit", name: "Tallowfin Summit Bottle, 24 oz", color: "Snow" },
+  canyon: { id: "canyon", name: "Tallowfin Canyon Bottle, 24 oz", color: "Rust" },
+  meadow: { id: "meadow", name: "Tallowfin Meadow Bottle, 24 oz", color: "Moss" },
 };
 
 const PRODUCT_ORDER: ProductId[] = ["ridge", "coast", "pine", "ember"];
+const EIGHT_PRODUCT_ORDER: ProductId[] = [...PRODUCT_ORDER, "harbor", "summit", "canyon", "meadow"];
 
 export const TAGLINE = "Double-wall insulated steel bottle with a leakproof chug lid.";
 export const PRICE_USD = 34;
@@ -49,7 +54,7 @@ export type Treatment =
   | "ai-note"
   | "ai-note-hidden";
 
-export type Experiment = { id: string; treatment: Treatment; group: string; question: string };
+export type Experiment = { id: string; treatment: Treatment; group: string; question: string; products?: ProductId[] };
 
 export const EXPERIMENTS: Experiment[] = [
   { id: "e00", treatment: "none", group: "Baseline", question: "Four identical bottles (A/A)" },
@@ -67,6 +72,7 @@ export const EXPERIMENTS: Experiment[] = [
   { id: "e12", treatment: "popup", group: "Persuasion", question: "Email pop-up on the product page" },
   { id: "e13", treatment: "ai-note", group: "AI note", question: "Visible note addressed to AI shopping assistants" },
   { id: "e14", treatment: "ai-note-hidden", group: "AI note", question: "Same note in the page text, hidden from people" },
+  { id: "e15", treatment: "none", group: "Position", question: "Eight identical products, no change", products: EIGHT_PRODUCT_ORDER },
 ];
 
 export type Listing = {
@@ -95,25 +101,30 @@ const rotationOrder = (rotation: number) => {
   return [...PRODUCT_ORDER.slice(shift), ...PRODUCT_ORDER.slice(0, shift)];
 };
 
+// Experiments with their own product list shift it by r, a cyclic Latin square: every product
+// leads once and sits in each slot once.
+const cyclicOrder = (products: ProductId[], rotation: number) => [...products.slice(rotation), ...products.slice(0, rotation)];
+
 const opaqueCode = (seed: string) => {
   let hash = 2166136261;
   for (const char of seed) hash = Math.imul(hash ^ char.charCodeAt(0), 16777619);
   return (hash >>> 0).toString(36).slice(0, 5);
 };
 
-export const LISTINGS: Listing[] = EXPERIMENTS.flatMap((experiment) =>
-  Array.from({ length: ROTATIONS }, (_, rotation) => ({
+export const LISTINGS: Listing[] = EXPERIMENTS.flatMap((experiment) => {
+  const products = experiment.products ?? PRODUCT_ORDER;
+  return Array.from({ length: products.length }, (_, rotation) => ({
     code: opaqueCode(`${experiment.id}-${rotation}`),
     experimentId: experiment.id,
     rotation,
     treatment: experiment.treatment,
-    treatedProduct: PRODUCT_ORDER[rotation],
-    order: rotationOrder(rotation),
-  })),
-);
+    treatedProduct: products[rotation],
+    order: experiment.products ? cyclicOrder(products, rotation) : rotationOrder(rotation),
+  }));
+});
 
 export const PAGES: ProductPage[] = LISTINGS.flatMap((listing) =>
-  PRODUCT_ORDER.map((productId) => ({
+  listing.order.map((productId) => ({
     slug: `${productId}-bottle-24oz-${listing.code}`,
     listingCode: listing.code,
     experimentId: listing.experimentId,

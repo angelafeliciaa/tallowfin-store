@@ -15,6 +15,7 @@ export default async function ListingPage({ params }: { params: Promise<{ code: 
       listing: code,
       experimentId: listing.experimentId,
       rotation: listing.rotation,
+      order: listing.order,
       userAgent: (await headers()).get("user-agent"),
       at: new Date().toISOString(),
     }),

@@ -5,6 +5,10 @@ const BODY_COLORS: Record<Product["id"], { body: string; shade: string }> = {
   coast: { body: "#d9c7a6", shade: "#bfa982" },
   pine: { body: "#4f6b55", shade: "#3d5443" },
   ember: { body: "#b8694c", shade: "#97523a" },
+  harbor: { body: "#9fb3c0", shade: "#8399a7" },
+  summit: { body: "#d6dadd", shade: "#b9bfc3" },
+  canyon: { body: "#a4492c", shade: "#863a22" },
+  meadow: { body: "#8a9a5b", shade: "#707e48" },
 };
 
 export default function BottleImage({ product, label = "TALLOWFIN" }: { product: Product; label?: string }) {
