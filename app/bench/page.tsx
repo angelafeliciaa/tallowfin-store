@@ -13,10 +13,11 @@ type Distribution = { n: number; runs: number; agents: Record<string, number>; s
 type Need = Distribution & { prompt: string; top_share: number };
 type Category = { category: string; bare: Distribution; bare_prompts: string[]; needs: Need[] };
 
-const PALETTE = ["#2f5bea", "#e8833a", "#2e9e6a", "#c94f7c", "#7a5af5", "#c9a227", "#3aa6b9", "#8c6d52"];
-const OTHER_COLOR = "#d6d3cf";
+const PALETTE = ["#000000", "#4d4d4d", "#808080", "#b3b3b3"];
+const DARK_SHADES = new Set(PALETTE.slice(0, 3));
+const OTHER_COLOR = "#e5e5e5";
 const HEDGE = "It depends";
-const HEDGE_COLOR = "#9a9a9a";
+const HEDGE_COLOR = "#f4f3f0";
 const MIN_SHARE_FOR_LABEL = 0.12;
 
 function colorsFor(category: Category) {
@@ -35,7 +36,7 @@ function StackedBar({ row, color }: { row: Distribution; color: (brand: string) 
       {row.shares.map(({ brand, count }) => {
         const share = count / row.n;
         return (
-          <span key={brand} className={styles.segment} style={{ width: `${share * 100}%`, background: color(brand) }} title={`${brand}: ${count} of ${row.n}`}>
+          <span key={brand} className={styles.segment} style={{ width: `${share * 100}%`, background: color(brand), color: DARK_SHADES.has(color(brand)) ? "#fff" : "#171717" }} title={`${brand}: ${count} of ${row.n}`}>
             {share >= MIN_SHARE_FOR_LABEL ? `${brand} ${Math.round(share * 100)}%` : ""}
           </span>
         );
