@@ -17,3 +17,7 @@ export function writeCart(items: CartItem[]) {
     // Private windows can refuse storage; the add-to-cart event is still logged server-side.
   }
 }
+
+export const checkoutSlug = (code: string, brand: string) => `k-${code}-${brand}`;
+
+export const codeFromCheckoutSlug = (slug: string) => /^k-([a-z0-9]+)-/.exec(slug)?.[1];

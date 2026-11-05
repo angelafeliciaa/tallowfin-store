@@ -1,13 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import { type CartItem, readCart } from "@/lib/cart";
+import { type CartItem, codeFromCheckoutSlug, readCart } from "@/lib/cart";
 import { PRICE_USD } from "@/lib/catalog";
 
 export default function CartPage() {
   const [items, setItems] = useState<CartItem[]>([]);
   useEffect(() => setItems(readCart()), []);
   const total = items.reduce((sum, item) => sum + item.quantity * PRICE_USD, 0);
+  const checkoutCode = items.map((item) => codeFromCheckoutSlug(item.slug)).find(Boolean);
 
   return (
     <div>
@@ -26,9 +28,15 @@ export default function CartPage() {
           <p className="price">{`Total: $${total}.00`}</p>
         </>
       )}
-      <button type="button" className="btn" disabled>
-        Checkout is unavailable right now
-      </button>
+      {checkoutCode ? (
+        <Link className="btn" href={`/k/${checkoutCode}/checkout`}>
+          Checkout
+        </Link>
+      ) : (
+        <button type="button" className="btn" disabled>
+          Checkout is unavailable right now
+        </button>
+      )}
     </div>
   );
 }
